@@ -6,13 +6,13 @@ module Players
     def move(board)
       move = nil
       corners = ["1", "3", "7", "9"]
-      if board.turn_count == 0 
+      if board.turn_count == 0
          move = corners.sample
       elsif board.turn_count == 1
           unless !board.taken?("5")
              move = "5"
           else
-             move = corners.sample   
+             move = corners.sample
           end
       elsif board.turn_count == 2 && board.cells[5] != self.token
            if board.cells[0] == self.token
@@ -44,6 +44,6 @@ module Players
           move
        end
 
-    end 
-  end 
-end 
+    end
+  end
+end
