@@ -17,7 +17,8 @@ class Board
     puts " #{cells[6]} | #{cells[7]} | #{cells[8]} "
   end
 
-  def position
+  def position(input)
+    index = input.to_i - 1
   end
 
 
