@@ -29,6 +29,11 @@ class Board
   end
 
   def turn_count
+    count = 0
+    cells.each do |cell|
+      if cell == "X" || cell == "0"
+        count += 1
+      end
   end
 
 
