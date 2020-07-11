@@ -23,6 +23,8 @@ class Board
   end
 
   def full?
+    cells.all? do |index|
+      index != " ""
   end
 
 
