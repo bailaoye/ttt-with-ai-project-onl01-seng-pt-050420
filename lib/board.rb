@@ -51,5 +51,4 @@ class Board
     cells[input.to_i - 1] = player.token
   end
 
-
 end
