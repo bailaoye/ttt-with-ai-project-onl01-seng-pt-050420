@@ -24,8 +24,10 @@ class Board
 
   def full?
     cells.all? do |index|
-      index != " ""
-  end
+      index != " "
+    end
+
+      end
 
 
 end
