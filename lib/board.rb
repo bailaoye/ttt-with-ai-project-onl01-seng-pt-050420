@@ -34,6 +34,7 @@ class Board
       if cell == "X" || cell == "0"
         count += 1
       end
+    end
   end
 
 
