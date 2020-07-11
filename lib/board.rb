@@ -22,5 +22,8 @@ class Board
     cells[index]
   end
 
+  def full?
+  end
+
 
 end
