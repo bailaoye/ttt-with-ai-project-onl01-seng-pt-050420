@@ -26,8 +26,7 @@ class Board
     cells.all? do |index|
       index != " "
     end
-
-      end
+  end
 
 
 end
