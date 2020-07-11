@@ -38,5 +38,18 @@ class Board
     count
   end
 
+  def taken?(position)
+    index = position.to_i - 1
+    cells[index] == "X" || cells[index] == "O"
+  end
+
+  def valid_move?(position)
+    position.to_i.between?(1, 9) && !taken?(position)
+  end
+
+  def update(input, player)
+    cells[input.to_i - 1] = player.token
+  end
+
 
 end
