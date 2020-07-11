@@ -9,4 +9,7 @@ class Board
     @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
 
+  def display
+  end
+
 end
